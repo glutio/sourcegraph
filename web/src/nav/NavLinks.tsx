@@ -33,7 +33,7 @@ export class NavLinks extends React.PureComponent<Props> {
         return (
             <ul className="nav-links nav align-items-center pl-2 pr-1">
                 {/* Show "Search" link on small screens when GlobalNavbar hides the SearchNavbarItem. */}
-                {this.props.location.pathname !== '/welcome' && (
+                {this.props.location.pathname !== '/search' && this.props.location.pathname !== '/welcome' && (
                     <li className="nav-item d-sm-none">
                         <Link className="nav-link" to="/search">
                             Search
